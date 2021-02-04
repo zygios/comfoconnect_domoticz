@@ -1,0 +1,10 @@
+[Unit]
+Description=Zehner Confoconnect Mqtt
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/comfoconnect/mqtt_to_node_red.py /home/comfoconnect/mqtt.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
