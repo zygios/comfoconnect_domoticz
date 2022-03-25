@@ -1,3 +1,13 @@
+# Install
+sudo apt install python3-pip
+pip3 install pycomfoconnect
+pip3 install paho-mqtt
+
+edit /home/comfoconnect/mqtt_to_node_red.py to set IP address
+
+To get device_uuid need to run command:
+python3 /home/comfoconnect/mqtt_to_node_red.py -d <ip-address>
+
 # comfoconnect_domoticz
 Zehnder Q350 ventilation unit MQTT to Domoticz
 
