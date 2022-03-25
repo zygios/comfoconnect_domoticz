@@ -19,9 +19,9 @@ Information using MQTT and Node-Red is push to Domoticz, at moment also from Dom
 Use commad:
 sudo nano /lib/systemd/system/confoconnect.service (add text from file confoconnect.service)
 
-sudo chmod 644 /lib/systemd/system/conficonnect.service
+sudo chmod 644 /lib/systemd/system/confoconnect.service
 sudo systemctl daemon-reload
-sudo systemctl enable conficonnect.service
+sudo systemctl enable confoconnect.service
 
 //to run script manualy python3 use command:
 python3 /home/comfoconnect/mqtt_to_node_red.py >> /home/comfoconnect/comfoconnect_gateway.log &
